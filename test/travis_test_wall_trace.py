@@ -22,7 +22,7 @@ class WallTraceTest(unittest.TestCase):
         return left, right
 
     def test_io(self):
-        left, right = self.set_and_get(400, 100, 100, 0)
+        left, right = self.set_and_get(400, 0, 0, 100)
         self.assertTrue(left == right == 0, "cant stop")
 
         left, right = self.set_and_get(0, 5, 1000, 0)
